@@ -1,0 +1,25 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion project.compileSdkVersion
+    buildToolsVersion project.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.bihe0832.android.aaf.theme.template"
+        minSdkVersion project.appMinSdkVersion
+        targetSdkVersion project.targetSdkVersion
+        versionName project.versionName
+        versionCode project.versionCode
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+dependencies {
+    api "com.bihe0832.android:lib-aaf-res:5.14.0"
+    api "androidx.appcompat:appcompat:1.5.0"
+}
